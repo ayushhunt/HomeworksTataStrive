@@ -1,0 +1,13 @@
+# Ignore all class files
+*.class
+
+# Ignore class files in specific directories
+bin/*.class
+out/*.class
+
+# Other common ignores
+*.log
+*.tmp
+.DS_Store
+node_modules/
+target/

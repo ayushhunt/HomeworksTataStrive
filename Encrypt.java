@@ -1,7 +1,7 @@
-package HomeworksTataStrive;
+//package HomeworksTataStrive;
 import java.util.Scanner;
 
-import Solution;
+//import Solution;
 
 class Solution {
     public String method(String input,byte k,byte r){
@@ -9,7 +9,14 @@ class Solution {
 
         for(int i=0;i<r;i++){
             for(int j=0;j<arr.length;j++){
-                arr[j]+=k;
+                if(arr[j]+k <= 122){
+                    arr[j]+=k;
+                }else {
+                    int t=arr[j]+k;
+                    t-=122;
+                    arr[j]=(char)(97+t-1);
+                }
+                
             }
         }
         return new String(arr);
